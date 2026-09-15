@@ -230,6 +230,10 @@ nav.links a.active{ color:var(--ink); border-color:var(--teal); }
   background:var(--bg);
   padding:26px 28px;
 }
+.card-logo{
+  height:42px; width:auto; max-width:160px; object-fit:contain;
+  display:block; margin-bottom:16px;
+}
 
 .entry{
   display:grid;
