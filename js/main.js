@@ -12,11 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Mark current page in nav
-  var here = (location.pathname.split('/').pop() || 'index.html');
+  // Mark current page in nav (works with clean, extensionless URLs)
+  var hereSeg = location.pathname.split('/').filter(Boolean)[0] || '';
   document.querySelectorAll('nav.links a').forEach(function (a) {
-    var href = a.getAttribute('href');
-    if (href === here || (here === '' && href === 'index.html')) {
+    var href = a.getAttribute('href') || '';
+    var hrefSeg = href.split('/').filter(Boolean)[0] || '';
+    if (hrefSeg === hereSeg) {
       a.classList.add('active');
     }
   });

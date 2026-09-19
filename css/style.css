@@ -189,7 +189,7 @@ nav.links a.active{ color:var(--ink); border-color:var(--teal); }
 .section.panel{ background:var(--bg-panel); }
 
 /* ---------- hero ---------- */
-.hero{ padding:76px 0 24px; }
+.hero{ padding-top:76px; padding-bottom:24px; }
 .hero .lede{ font-size:1.15rem; max-width:56ch; color:var(--ink-soft); }
 .hero-stats{
   display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
@@ -466,7 +466,7 @@ footer.site{
 .footer-fine{ font-family:var(--mono); font-size:0.72rem; color:var(--ink-faint); }
 
 /* page header (non-home pages) */
-.page-head{ padding:56px 0 8px; }
+.page-head{ padding-top:56px; padding-bottom:8px; }
 .page-head p{ font-size:1.05rem; }
 
 /* reveal-on-scroll */
